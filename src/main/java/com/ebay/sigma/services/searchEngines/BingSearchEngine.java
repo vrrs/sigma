@@ -15,7 +15,7 @@ final class BingSearchEngine implements SearchEngine {
 	@Override
 	public String getResults(String query) throws QueryExecutionException {
 		final String completeURL = baseURL + query;
-		return null;
+		return "{}";
 	}
 
 	@Override
