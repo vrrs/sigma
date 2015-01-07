@@ -35,10 +35,10 @@ public final class SearchAggregatorService extends HttpServlet {
 
 	private SearchEngine getSearchEngine() {
 		SearchEngines engines = SearchEngines.getInstance();
-		SearchEngineAggregate aggregateEngines = new SearchEngineAggregate().add(engines.newBingSearchEngine())
+		SearchEngineAggregate aggregateEngine = new SearchEngineAggregate().add(engines.newBingSearchEngine())
 																			.add(engines.newGoogleSearchEngine())
-																			.add(engines.newYahooSearchEngine());
-		return aggregateEngines;
+																			.add(engines.newGigaBlastEngine());
+		return aggregateEngine;
 	}
 	
 	protected void doGet(HttpServletRequest req, HttpServletResponse response) throws IOException{

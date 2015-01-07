@@ -12,8 +12,8 @@ public final class SearchEngines {
 		return new BingSearchEngine();
 	}
 	
-	public SearchEngine newYahooSearchEngine(){
-		return new YahooSearchEngine();
+	public SearchEngine newGigaBlastEngine(){
+		return new GigaBlastEngine();
 	}
 
 	public SearchEngine newGoogleSearchEngine(){
